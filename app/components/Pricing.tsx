@@ -6,34 +6,34 @@ import { motion } from "framer-motion";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$29",
+    name: "Inicial",
+    price: "R$29",
     features: [
-      "5 team members",
-      "Basic analytics",
-      "24/7 support",
-      "10GB storage",
+      "5 membros da equipe",
+      "Análises básicas",
+      "Suporte 24/7",
+      "10GB de armazenamento",
     ],
   },
   {
-    name: "Professional",
-    price: "$99",
+    name: "Profissional",
+    price: "R$99",
     features: [
-      "Unlimited team members",
-      "Advanced analytics",
-      "Priority support",
-      "100GB storage",
-      "Custom integrations",
+      "Membros ilimitados",
+      "Análises avançadas",
+      "Suporte prioritário",
+      "100GB de armazenamento",
+      "Integrações personalizadas",
     ],
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Empresarial",
+    price: "Personalizado",
     features: [
-      "Unlimited everything",
-      "Dedicated account manager",
-      "Custom feature development",
-      "On-premise deployment option",
+      "Tudo ilimitado",
+      "Gerente de conta dedicado",
+      "Desenvolvimento de recursos personalizados",
+      "Opção de implantação local",
     ],
   },
 ];
@@ -81,10 +81,10 @@ export default function Pricing() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-extrabold text-foreground sm:text-4xl">
-            Simple, transparent pricing
+            Preços simples e transparentes
           </h2>
           <p className="mt-4 text-xl text-muted-foreground">
-            Choose the plan thats right for your business
+            Escolha o plano ideal para seu negócio
           </p>
         </motion.div>
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
@@ -109,17 +109,17 @@ export default function Pricing() {
                   {plan.price}
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {plan.name === "Enterprise"
+                  {plan.name === "Empresarial"
                     ? "Contact us for pricing"
                     : "per month"}
                 </p>
                 <Button className="mt-6 w-full">
-                  {plan.name === "Enterprise" ? "Contact sales" : "Get started"}
+                  {plan.name === "Empresarial" ? "Falar com vendas" : "Começar agora"}
                 </Button>
               </div>
               <div className="px-6 pt-6 pb-8">
                 <h4 className="text-sm font-medium text-foreground tracking-wide uppercase">
-                  Whats included
+                  O que está incluído
                 </h4>
                 <ul className="mt-6 space-y-4">
                   {plan.features.map((feature) => (

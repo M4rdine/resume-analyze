@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    name: "Lightning Fast",
+    name: "Velocidade Relâmpago",
     description:
-      "Our platform is optimized for speed, ensuring quick load times and responsive interactions.",
+      "Nossa plataforma é otimizada para velocidade, garantindo carregamentos rápidos e interações responsivas.",
     icon: Zap,
   },
   {
-    name: "Intuitive Interface",
+    name: "Interface Intuitiva",
     description:
-      "A user-friendly interface that's easy to navigate, making your work more efficient.",
+      "Uma interface amigável e fácil de navegar, tornando seu trabalho mais eficiente.",
     icon: Layers,
   },
   {
-    name: "Team Collaboration",
+    name: "Colaboração em Equipe",
     description:
-      "Seamlessly work together with your team members in real-time.",
+      "Trabalhe perfeitamente com seus membros da equipe em tempo real.",
     icon: Users,
   },
   {
-    name: "Advanced Analytics",
+    name: "Análises Avançadas",
     description:
-      "Gain valuable insights with our powerful analytics and reporting tools.",
+      "Obtenha insights valiosos com nossas poderosas ferramentas de análise e relatórios.",
     icon: TrendingUp,
   },
 ];
@@ -33,7 +33,7 @@ const features = [
 export default function Features() {
   return (
     <div className="py-24 bg-background relative overflow-hidden" id="features">
-      {/* Add background elements */}
+      {/* Adicionar elementos de fundo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute -top-1/2 -right-1/4 w-1/2 h-1/2 bg-primary-light rounded-full"
@@ -70,7 +70,7 @@ export default function Features() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Features
+            Funcionalidades
           </motion.h2>
           <motion.p
             className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-foreground sm:text-4xl"
@@ -79,7 +79,7 @@ export default function Features() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Everything you need to streamline your workflow
+            Tudo que você precisa para otimizar seu fluxo de trabalho
           </motion.p>
           <motion.p
             className="mt-4 max-w-2xl text-xl text-muted-foreground lg:mx-auto"
@@ -88,8 +88,8 @@ export default function Features() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            StreamLine offers a comprehensive set of features designed to boost
-            your productivity and simplify your business processes.
+            O StreamLine oferece um conjunto abrangente de recursos projetados para
+            aumentar sua produtividade e simplificar seus processos de negócios.
           </motion.p>
         </div>
 

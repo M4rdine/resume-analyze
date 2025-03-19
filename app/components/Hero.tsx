@@ -20,7 +20,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Simplify Your Workflow
+              Simplifique seu Fluxo de Trabalho
             </motion.span>
             <motion.span
               className="text-foreground"
@@ -28,7 +28,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              with StreamLine
+              com StreamLine
             </motion.span>
           </h1>
           <motion.p
@@ -37,8 +37,8 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Boost productivity and streamline your business processes with our
-            powerful SaaS platform. Designed for teams of all sizes.
+            Aumente a produtividade e otimize seus processos de negócio com nossa
+            poderosa plataforma SaaS. Projetada para equipes de todos os tamanhos.
           </motion.p>
           <motion.div
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
@@ -47,10 +47,10 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.8 }}
           >
             <Button size="lg" className="w-full sm:w-auto">
-              Get started
+              Começar agora
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Learn more
+              Saiba mais
             </Button>
           </motion.div>
         </motion.div>

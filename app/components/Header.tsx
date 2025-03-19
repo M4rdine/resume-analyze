@@ -19,27 +19,27 @@ export default function Header() {
               href="#features"
               className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Features
+              Funcionalidades
             </Link>
             <Link
               href="#testimonials"
               className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Testimonials
+              Depoimentos
             </Link>
             <Link
               href="#pricing"
               className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Pricing
+              Preços
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Button variant="outline" className="hidden sm:inline-flex">
-              Log in
+              Entrar
             </Button>
-            <Button>Sign up</Button>
+            <Button>Cadastrar</Button>
           </div>
         </div>
       </div>

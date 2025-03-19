@@ -6,26 +6,27 @@ import Image from "next/image";
 const testimonials = [
   {
     name: "Sarah Thompson",
-    role: "CEO at TechCorp",
+    role: "CEO da TechCorp",
     image: "/placeholder.svg?height=400&width=400",
     quote:
-      "StreamLine has revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our team's productivity.",
+      "O StreamLine revolucionou nosso fluxo de trabalho. É intuitivo, poderoso e aumentou significativamente a produtividade da nossa equipe.",
   },
   {
     name: "John Davis",
-    role: "Marketing Director at GrowthHub",
+    role: "Diretor de Marketing da GrowthHub",
     image: "/placeholder.svg?height=400&width=400",
     quote:
-      "The analytics features in StreamLine have provided us with invaluable insights. It's been a game-changer for our marketing strategies.",
+      "Os recursos de análise do StreamLine nos forneceram insights valiosos. Foi um divisor de águas para nossas estratégias de marketing.",
   },
   {
     name: "Emily Chen",
-    role: "Product Manager at InnovateCo",
+    role: "Gerente de Produto da InnovateCo",
     image: "/placeholder.svg?height=400&width=400",
     quote:
-      "The collaboration tools in StreamLine have made remote work seamless for our team. It's an essential part of our daily operations now.",
+      "As ferramentas de colaboração do StreamLine tornaram o trabalho remoto perfeito para nossa equipe. Agora é uma parte essencial de nossas operações diárias.",
   },
 ];
+
 
 export default function Testimonials() {
   return (
@@ -70,10 +71,10 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-extrabold text-foreground sm:text-4xl">
-            Trusted by businesses worldwide
+            Confiado por empresas em todo o mundo
           </h2>
           <p className="mt-4 text-xl text-muted-foreground">
-            Heres what our satisfied customers have to say about StreamLine
+            Veja o que nossos clientes satisfeitos dizem sobre o StreamLine
           </p>
         </motion.div>
         <div className="mt-16 grid gap-8 lg:grid-cols-3">

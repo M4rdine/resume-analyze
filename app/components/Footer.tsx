@@ -10,111 +10,30 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">
-              Product
+              Produto
             </h3>
             <ul className="mt-4 space-y-4">
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Integrations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  API
-                </Link>
-              </li>
+              <li>Funcionalidades</li>
+              <li>Preços</li>
+              <li>Integrações</li>
+              <li>API</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">
-              Company
-            </h3>
-            <ul className="mt-4 space-y-4">
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Press
-                </Link>
-              </li>
+            <h3>Empresa</h3>
+            <ul>
+              <li>Sobre</li>
+              <li>Blog</li>
+              <li>Carreiras</li>
+              <li>Imprensa</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">
-              Legal
-            </h3>
-            <ul className="mt-4 space-y-4">
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Cookie Policy
-                </Link>
-              </li>
+            <h3>Legal</h3>
+            <ul>
+              <li>Privacidade</li>
+              <li>Termos</li>
+              <li>Política de Cookies</li>
             </ul>
           </div>
         </div>
