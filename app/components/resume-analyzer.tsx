@@ -63,13 +63,26 @@ export function ResumeAnalyzer() {
     }
   }
 
-  const readFileAsText = (file: File): Promise<string> => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader()
-      reader.onload = (e) => resolve(e.target?.result as string)
-      reader.onerror = (e) => reject(e)
-      reader.readAsText(file)
-    })
+  const readFileAsText = async (file: File) => {
+   const formData = new FormData();
+    formData.append("FILE", file);
+
+    try {
+      const response = await fetch("/api/parse-data", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to upload file");
+      }
+
+      const parsedText = await response.text();
+      console.log(parsedText);
+      return parsedText;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
