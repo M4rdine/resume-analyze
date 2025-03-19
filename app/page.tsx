@@ -1,17 +1,23 @@
-import { ResumeAnalyzer } from './components/resume-analyzer';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="container mx-auto py-10 px-4 md:px-6">
-      <div className="max-w-5xl mx-auto space-y-6">
-        <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight">Ferramenta de Análise de Currículos</h1>
-          <p className="text-muted-foreground">
-            Envie um currículo e insira a descrição da vaga para obter análise e compatibilidade com IA
-          </p>
-        </div>
-        <ResumeAnalyzer />
-      </div>
-    </main>
-  )
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <Testimonials />
+        <Pricing />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
+  );
 }
