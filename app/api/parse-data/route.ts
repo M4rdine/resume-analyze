@@ -20,16 +20,17 @@ export async function POST(req: NextRequest) {
 
       const fileBuffer = Buffer.from(await uploadedFile.arrayBuffer());
 
-      await fs.writeFile(tempFilePath, fileBuffer); 
-      const pdfParser = new (PDFParser as any)(null, 1);
+      await fs.writeFile(tempFilePath, fileBuffer);
+      // @ts-ignore 
+      const pdfParser = new (PDFParser)(null, 1);
 
-      pdfParser.on("pdfParser_dataError", (errData: any) =>
+      pdfParser.on("pdfParser_dataError", (errData) =>
         console.log(errData.parserError)
       );
 
       pdfParser.on("pdfParser_dataReady", () => {
-        console.log((pdfParser as any).getRawTextContent());
-        parsedText = (pdfParser as any).getRawTextContent();
+        console.log((pdfParser).getRawTextContent());
+        parsedText = (pdfParser).getRawTextContent();
       });
 
       await new Promise((resolve, reject) => {
