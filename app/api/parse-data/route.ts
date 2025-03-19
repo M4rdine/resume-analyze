@@ -21,7 +21,8 @@ export async function POST(req: NextRequest) {
       const fileBuffer = Buffer.from(await uploadedFile.arrayBuffer());
 
       await fs.writeFile(tempFilePath, fileBuffer);
-      // @ts-ignore 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
       const pdfParser = new (PDFParser)(null, 1);
 
       pdfParser.on("pdfParser_dataError", (errData) =>
